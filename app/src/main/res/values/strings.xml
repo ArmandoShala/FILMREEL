@@ -3,4 +3,10 @@
     <string name="title_home">Home</string>
     <string name="title_quiz">Quiz</string>
     <string name="title_watchlist">Watchlist</string>
+    <string name="text_moreInfos">Show Details</string>
+    <string name="text_play">Play</string>
+    <string name="text_greeting">Add some text here to explain stuff</string>
+    <string name="ask_player_quantity">1 oder 2 Player?</string>
+    <string name="title_congratulations">Congratulations!</string>
+    <string name="text_watchMovies">Now Go Watch Some Movies!</string>
 </resources>
