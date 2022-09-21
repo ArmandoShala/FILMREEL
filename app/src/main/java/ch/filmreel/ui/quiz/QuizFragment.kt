@@ -1,4 +1,4 @@
-package ch.filmreel.ui.dashboard
+package ch.filmreel.ui.quiz
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import ch.filmreel.databinding.FragmentDashboardBinding
+import ch.filmreel.databinding.FragmentQuizBinding
+class QuizFragment : Fragment() {
 
-class DashboardFragment : Fragment() {
-
-    private var _binding: FragmentDashboardBinding? = null
+    private var _binding: FragmentQuizBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +21,14 @@ class DashboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+        val qiuzViewModel =
+            ViewModelProvider(this).get(QiuzViewModel::class.java)
 
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = FragmentQuizBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
+        qiuzViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

@@ -12,14 +12,14 @@
             tools:layout="@layout/fragment_home"/>
 
     <fragment
-            android:id="@+id/navigation_dashboard"
-            android:name="ch.filmreel.ui.dashboard.DashboardFragment"
-            android:label="@string/title_dashboard"
-            tools:layout="@layout/fragment_dashboard"/>
+            android:id="@+id/navigation_quiz"
+            android:name="ch.filmreel.ui.quiz.QuizFragment"
+            android:label="@string/title_quiz"
+            tools:layout="@layout/fragment_quiz"/>
 
     <fragment
-            android:id="@+id/navigation_notifications"
-            android:name="ch.filmreel.ui.notifications.NotificationsFragment"
-            android:label="@string/title_notifications"
-            tools:layout="@layout/fragment_notifications"/>
+            android:id="@+id/navigation_watchlist"
+            android:name="ch.filmreel.ui.watchlist.WatchlistFragment"
+            android:label="@string/title_watchlist"
+            tools:layout="@layout/fragment_watchlist"/>
 </navigation>
