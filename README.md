@@ -59,13 +59,14 @@ FILMREEL kann mit bis zu zwei Spielenden auf einem Smartphone gespielt werden. B
 <br >
 
 ## Techstack und Tools 🧰
-* [Kotlin] (https://kotlinlang.org/)
-* [Android Development] (https://developer.android.com/)
-* [Redis DB] (https://redis.io/)
-* [YouTube-API] (https://developers.google.com/youtube/v3)
-* [Figma] (https://www.figma.com/)
-* [Material Design] (https://material.io/)
-
+* [Kotlin](https://kotlinlang.org/)
+* [Redis DB](https://redis.io/) _tbd_
+* [YouTube-API](https://developers.google.com/youtube/v3) _tbd_
+* [Netflix-API](https://rapidapi.com/blog/netflix-api/) _tbd_
+* [Material Design](https://material.io/)
+* [Figma](https://www.figma.com/)
+* [IntelliJ](https://www.jetbrains.com/idea/)
+* [Android Development](https://developer.android.com/)
 
 <br >
 
