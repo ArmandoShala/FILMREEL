@@ -1,22 +1,19 @@
-[![GitHub issues](https://img.shields.io/github/issues/ArmandoShala/FILMREEL)](https://GitHub.com/ArmandoShala/FILMREEL/issues/)
-[![TeamCity (simple build status)](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/Kotlin_KotlinPublic_Compiler.svg)](https://teamcity.jetbrains.com/buildConfiguration/Kotlin_KotlinPublic_Compiler?branch=%3Cdefault%3E&buildTypeTab=overview&mode=builds)
-[![CI](https://github.com/ohmyzsh/ohmyzsh/workflows/CI/badge.svg)](https://github.com/ohmyzsh/ohmyzsh/actions?query=workflow%3ACI)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-[![GitHub contributors](https://badgen.net/github/contributors/ArmandoShala/FILMREEL)](https://GitHub.com/ArmandoShala/FILMREEL/graphs/contributors/)
+<div align="center">
+
+![screenshot](https://user-images.githubusercontent.com/11156050/192218132-4efe0d53-0729-49e2-b36a-85fcae44f5c7.png)
+
+[![GitHub issues](https://img.shields.io/github/issues/ArmandoShala/FILMREEL)](https://GitHub.com/ArmandoShala/FILMREEL/issues/)&nbsp;&nbsp;&nbsp;&nbsp;
+[![TeamCity (simple build status)](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/Kotlin_KotlinPublic_Compiler.svg)](https://teamcity.jetbrains.com/buildConfiguration/Kotlin_KotlinPublic_Compiler?branch=%3Cdefault%3E&buildTypeTab=overview&mode=builds)&nbsp;&nbsp;&nbsp;&nbsp;
+[![CI](https://github.com/ohmyzsh/ohmyzsh/workflows/CI/badge.svg)](https://github.com/ohmyzsh/ohmyzsh/actions?query=workflow%3ACI)&nbsp;&nbsp;&nbsp;&nbsp;
+[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[![GitHub contributors](https://badgen.net/github/contributors/ArmandoShala/FILMREEL)](https://GitHub.com/ArmandoShala/FILMREEL/graphs/contributors/)&nbsp;&nbsp;&nbsp;&nbsp;
 [![GitHub open-pull-requests](https://badgen.net/github/open-prs/ArmandoShala/FILMREEL)](https://github.com/ArmandoShala/FILMREEL/pulls?q=is%3Aopen)
 
-# FILMREEL
+</div>
 
-**FILMREEL ist eine Mobile App, auf der du mit einer Person aus deinem Freundeskreis auf Filme aufmerksam gemacht wirst und euch somit in Quizspiele zu Filmen messen könnt.**
-Ihr seid ein Swipe entfernt, um euren nächsten Filmabend zu perfektionieren. Das Spezielle an FILMREEL ist, dass ihr während, vor oder nach dem Film Quizzes zu Trailern beantworten und somit Punkte sammeln könnt. Wer weiss, wohlmöglich ist eurer nächster Filmabend bereits mit euren neuen Lieblingsblockbuster in der persönlichen Watchlist gesichert 😉
 
-## Game Details 🔍
-FILMREEL kann mit bis zu zwei Spielenden auf einem Smartphone gespielt werden. Beide benutzenden Personen sehen gleichzeitig einen Teilausschnitt eines Trailers und können direkt Fragen zum Film beantworten. Die Antwortauswahl ist für beide benutzenden Personen getrennt, wobei die Linke Seite der Antwortauswahl spielender Person 1 und die rechte Seite spielender Person 2 gehört
-
-<br >
-
-<details>
-  <summary>TOC</summary>
+<h1>Table of Contents</h1>
 
 <!--ts-->
 - [FILMREEL](#filmreel)
@@ -31,8 +28,16 @@ FILMREEL kann mit bis zu zwei Spielenden auf einem Smartphone gespielt werden. B
 - [Authors 🪶](#authors-)
 - [License 📝](#license-)
 
-<!--te-->
-</details>
+<br >
+
+# FILMREEL
+
+**FILMREEL ist eine Mobile App, auf der du mit einer Person aus deinem Freundeskreis auf Filme aufmerksam gemacht wirst und euch somit in Quizspiele zu Filmen messen könnt.**
+Ihr seid ein Swipe entfernt, um euren nächsten Filmabend zu perfektionieren. Das Spezielle an FILMREEL ist, dass ihr während, vor oder nach dem Film Quizzes zu Trailern beantworten und somit Punkte sammeln könnt. Wer weiss, wohlmöglich ist eurer nächster Filmabend bereits mit euren neuen Lieblingsblockbuster in der persönlichen Watchlist gesichert 😉
+
+## Game Details 🔍
+FILMREEL kann mit bis zu zwei Spielenden auf einem Smartphone gespielt werden. Beide benutzenden Personen sehen gleichzeitig einen Teilausschnitt eines Trailers und können direkt Fragen zum Film beantworten. Die Antwortauswahl ist für beide benutzenden Personen getrennt, wobei die Linke Seite der Antwortauswahl spielender Person 1 und die rechte Seite spielender Person 2 gehört
+
 
 <br >
 
@@ -99,7 +104,4 @@ If you discover any security related issues, please use the issue tracker instea
 Build with ❤️ by [@armandoshala](https://www.github.com/armandoshala), [@omerasipi](https://www.github.com/omerasipi), and [@landrit](https://www.github.com/landrit) in Switzerland
 
 # License 📝
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
+FILMREEL is distributed under the terms of the [Apache License (Version 2.0)](https://www.apache.org/licenses/LICENSE-2.0).
