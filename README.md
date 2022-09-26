@@ -30,7 +30,7 @@
 Ihr seid ein Swipe entfernt, um euren nächsten Filmabend zu perfektionieren. Das Spezielle an FILMREEL ist, dass ihr während, vor oder nach dem Film Quizzes zu Trailern beantworten und somit Punkte sammeln könnt. Wer weiss, wohlmöglich ist eurer nächster Filmabend bereits mit euren neuen Lieblingsblockbuster in der persönlichen Watchlist gesichert 😉
 
 ## Game Details 🔍
-FILMREEL kann mit bis zu zwei Spielenden auf einem Smartphone gespielt werden. Beide benutzenden Personen sehen gleichzeitig einen Teilausschnitt eines Trailers und können direkt Fragen zum Film beantworten. Die Antwortauswahl ist für beide benutzenden Personen getrennt, wobei die Linke Seite der Antwortauswahl spielender Person 1 und die rechte Seite spielender Person 2 gehört
+FILMREEL kann mit bis zu zwei spielenden Personen auf einem Smartphone gespielt werden. Beide benutzenden Personen sehen gleichzeitig einen Teilausschnitt eines Trailers und können direkt Fragen zum Film beantworten. Die Antwortauswahl ist für beide benutzenden Personen getrennt, wobei die Linke Seite der Antwortauswahl spielender Person 1 und die rechte Seite spielender Person 2 gehört
 
 
 <br >
@@ -75,8 +75,9 @@ FILMREEL kann mit bis zu zwei Spielenden auf einem Smartphone gespielt werden. B
 
 ## Zukünftig mögliche Erweiterungen 💡
 * Reiner Swipemodus, ohne ein Quiz, um die Watchlist zu befüllen
-* Multidevicefähigkeit, um gegen andere User anzutreten
-* Chatfunktion, um mit anderen Usern in Kontakt zu treten
+* Multidevicefähigkeit, um gegen andere teilnehmende Personen anzutreten
+* Multispielermodus, um mit mehreren gegnerische Spielende anzutreten
+* Chatfunktion, um mit anderen Personen in Kontakt zu treten
 * Algorithmus, um Personen zusammenzuführen, welche Filme auf der Watchlist haben, welche sich ähneln
 
 <br >
