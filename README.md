@@ -25,12 +25,11 @@
 
 # FILMREEL
 
-**FILMREEL ist eine Mobile App, auf der du mit einer Person aus deinem Freundeskreis auf Filme aufmerksam gemacht wirst und euch somit in Quizspiele zu Filmen messen könnt.**
-Ihr seid ein Swipe entfernt, um euren nächsten Filmabend zu perfektionieren. Das Spezielle an FILMREEL ist, dass ihr während, vor oder nach dem Film Quizzes zu Trailern beantworten und somit Punkte sammeln könnt. Wer weiss, wohlmöglich ist eurer nächster Filmabend bereits mit euren neuen Lieblingsblockbuster in der persönlichen Watchlist gesichert 😉
+**FILMREEL is a mobile app that matches you with someone in your circle of friends to watch movies, allowing you to compete in trivia games about movies.**
+You're one swipe away from perfecting your next movie night. What's special about FILMREEL is that you can answer quizzes about trailers during, before or after the movie and thus collect points. Who knows, maybe your next movie night is already secured with your new favorite blockbuster in your personal watchlist. 😉
 
 ## Game Details 🔍
-FILMREEL kann mit bis zu zwei spielenden Personen auf einem Smartphone gespielt werden. Beide benutzenden Personen sehen gleichzeitig einen Teilausschnitt eines Trailers und können direkt Fragen zum Film beantworten. Die Antwortauswahl ist für beide benutzenden Personen getrennt, wobei die Linke Seite der Antwortauswahl spielender Person 1 und die rechte Seite spielender Person 2 gehört
-
+FILMREEL can be played with up to two people on one smartphone. Both users see a partial clip of a trailer at the same time and can directly answer questions about the film. The answer selection is separated for both users, with the left side of the answer selection belonging to player 1 and the right side to player 2.
 
 <br >
 
@@ -38,11 +37,11 @@ FILMREEL kann mit bis zu zwei spielenden Personen auf einem Smartphone gespielt 
 
 | Page   | Beschreibung |
 | :------------- | :------------- |
-| ![image](https://user-images.githubusercontent.com/11156050/192164143-dab7bfa6-6209-4faf-a1d8-74e0acadc678.png) Home | Auf der Home Page wird eine Einführung zu der App präsentiert. Damit soll die bestmögliche User-Experience erreicht werden. Zudem wird aufgeklärt, wie die App funktioniert und man kann Spieleinstellungen treffen, wie z.B Genre und Spieleranzahl. Das Quiz kann nach jeder Frage beendet werden  |
-| ![image](https://user-images.githubusercontent.com/11156050/192164631-9294bf0b-2ec7-4030-a7ba-271556c92036.png) Quiz | Auf der Quiz Page wird kurz ein Trailerausschnitt zu einem Film gezeigt. Die Nutzende haben limitierte Zeit, sich den kleinen Filmabschnitt anzuschauen. Danach geht der Timer los und das Quiz-Duell zu diesem Filmabschnitt beginnt. Unterhalb des Filmabschnitts werden diverse Fragen sowie dazugehörige Antworten aufgelistet, für welche sich die Spielende schnellstmöglich entscheiden müssen. Es gilt hier nämlich, je schneller desto mehr Punkte. Nachdem die Frage beantwortet wurde oder der Timer abgelaufen ist, wird zum Scoreboard gewechselt und die Punkte sind als Zwischenstand ersichtlich. Die spielende Person, welche mehr Punkte während des Spielt gesammelt hat, gewinnt dieses Duell. Dieses Verfahren ähnelt dem Verfahren von Kahoot. |
-| ![image](https://user-images.githubusercontent.com/11156050/192164635-e5aae3f7-1b8e-4326-ac2f-9389c3946934.png) Scoreboard | Nach jeder Frage wird das aktuelle Scoreboard angezeigt. Hier ist ersichtlich, wer im Rennen vorne liegt. Zusätzlich haben die spielenden Personen die Möglichkeit weitere Details zu dem davor angezeigten Film anzuschauen, das Quiz zu beenden oder durch Swipen den Film auf die Watchlist zu setzen. Durch einen Rechts-Swipe auf dem Scoreboard wird der Film auf die Watchlist gesetzt. Mit einem Links-Swipe wird der Film verworfen. Durch einen Swipe nach oben gibt man an, dass man den Film bereits gesehen hat, aber dennoch auf die Watchlist haben will. Zu guter Letzt kann man nach unten swipen, sodass der Film auf die Watchlist kommt, aber bereits als gesehen markiert wird. |
-| ![image](https://user-images.githubusercontent.com/11156050/192164640-93deafac-f424-434d-8f45-9450f0b8549e.png) Leaderboard | Die Leaderboard-Seite wird angezeigt, sobald das Duell zu Ende ist. Auf der Leaderboard Seite wird die erstplatzierte Person und die dazugehörige Punktzahl angezeigt. |
-| ![image](https://user-images.githubusercontent.com/11156050/192164643-1e0c7db7-a17f-4f48-9d53-2e1f9b244946.png) Watchlist | Auf der Watchlist werden alle Filme angezeigt, welche einen Rechts-Swipe erhalten haben. Diese Idee haben wir von beliebten Dating-Apps. Auf der Watchlist können Details zu diesen Filmen aufgeklappt werden und die benutzenden Personen können markieren, ob sie den Film bereits gesehen haben. |
+| ![image](https://user-images.githubusercontent.com/11156050/192164143-dab7bfa6-6209-4faf-a1d8-74e0acadc678.png) Home | An introduction to the app is presented on the home page. This is to achieve the best possible user experience. It also explains how the app works and allows you to set game preferences, such as genre and number of players. The quiz can be ended after each question |
+| ![image](https://user-images.githubusercontent.com/11156050/192164631-9294bf0b-2ec7-4030-a7ba-271556c92036.png) Quiz | On the quiz page a short trailer clip of a movie is shown. The users have limited time to watch the short film clip. After that, the timer starts and the quiz duel for this movie clip begins. Below the film section, various questions and corresponding answers are listed, which the players have to decide on as quickly as possible. The faster the answer, the more points you get. After the question has been answered or the timer has run out, the game switches to the scoreboard and the points are displayed as an intermediate score. The person who has collected more points during the game wins the duel. This procedure is similar to the Kahoot procedure |
+| ![image](https://user-images.githubusercontent.com/11156050/192164635-e5aae3f7-1b8e-4326-ac2f-9389c3946934.png) Scoreboard | After each question from the current scoreboard is displayed. Here you can see who is ahead in the race. In addition, the players have the option of viewing further details on the film displayed before, ending the quiz or adding the film to the watchlist by swiping. A right swipe on the scoreboard puts the movie on the watchlist. Swiping left discards the movie. Swipe up to indicate that you have already seen the movie, but still want it on the watchlist. Last but not least, you can swipe down, so that the film is added to the watchlist, but is already marked as watched |
+| ![image](https://user-images.githubusercontent.com/11156050/192164640-93deafac-f424-434d-8f45-9450f0b8549e.png) Leaderboard | The leaderboard page is displayed as soon as the duel is over. The leaderboard page displays the first-placed person and the corresponding score |
+| ![image](https://user-images.githubusercontent.com/11156050/192164643-1e0c7db7-a17f-4f48-9d53-2e1f9b244946.png) Watchlist | The Watchlist displays all movies that have received a right-swipe. We got this idea from popular dating apps. On the watchlist, details about these movies can be expanded and the people using them can mark whether they have already seen the movie |
 
 <br >
 
@@ -73,11 +72,11 @@ FILMREEL kann mit bis zu zwei spielenden Personen auf einem Smartphone gespielt 
 <br >
 
 ## Zukünftig mögliche Erweiterungen 💡
-* Reiner Swipemodus, ohne ein Quiz, um die Watchlist zu befüllen
-* Multidevicefähigkeit, um gegen andere teilnehmende Personen anzutreten
-* Multispielermodus, um mit mehreren gegnerische Spielende anzutreten
-* Chatfunktion, um mit anderen Personen in Kontakt zu treten
-* Algorithmus, um Personen zusammenzuführen, welche Filme auf der Watchlist haben, welche sich ähneln
+* Pure swipe mode, without a quiz to fill the watchlist.
+* Multidevice capability to compete against other participating people
+* Multiplayer mode, to compete with several opposing game ends
+* Chat function to get in contact with other persons
+* Algorithm to match people who have movies on their watchlist that are similar to each other
 
 <br >
 
@@ -92,7 +91,7 @@ If you discover any security related issues, please use the issue tracker instea
  - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
  - [Awesome README](https://github.com/matiassingers/awesome-readme)
  - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
- - Ich danke Gott, meiner Familie und Freunden. Und den Rest verdank ich 5, 6 Leuten.
+ - [Ich danke Gott, meiner Familie und Freunden. Und den Rest verdank ich 5, 6 Leuten.](https://genius.com/4160880)
 
 
 # Authors 🪶
