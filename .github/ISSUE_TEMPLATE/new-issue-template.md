@@ -14,7 +14,7 @@ The more detail the better
 What is the Pain point?
 
 **Requirement**
-What needs to be done
+- [ ] What needs to be done
 
 **Possible way of implementation / solution**
 Suggestion on how to implement this
