@@ -23,7 +23,7 @@ class WatchlistFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val watchlistViewModel =
-            ViewModelProvider(this).get(WatchlistViewModel::class.java)
+            ViewModelProvider(this)[WatchlistViewModel::class.java]
 
         _binding = FragmentWatchlistBinding.inflate(inflater, container, false)
         val root: View = binding.root
