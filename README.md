@@ -100,8 +100,8 @@ We use a simplyfied version of the [Gitflow](https://www.atlassian.com/de/git/tu
 ![screenshot](https://lh3.googleusercontent.com/8dNQyk6EkIvu9UZI-uaGYtQ2R3sqxn0BEbvk6xPiBmswMfcL2iFa6Zy6g0ewpWdTBIo1xQftjaZwMBaF-ODVc3jrIkBR03QsarL6BvtlEQ87KIsSxoxT2nScG6PZwsShuNa8kXM)
 </div>
 
-As for the naming of the branches, we use the following convention:
-GH-`<issue>-<issue-namee>[-<short-description>]`
+As for the naming of the feature branches, we use the following convention:
+GH-`<issue-id>-<issue-namee>[-<short-description>]`
 
 # Commit Messages 📝
 The following section is optional, but highly recommended. It is a good practice to write a commit message in the following format:
