@@ -17,12 +17,12 @@
   - [API Reference 🖇️ TBD](#api-reference-️-tbd)
   - [Possible Future Extension 💡](#possible-future-extension-)
 - [Security 👮](#security-)
-- [Branching Modell and Naming 🌿](#branching-modell-and-naming-)
+- [Branching Model and Naming 🌿](#branching-modell-and-naming-)
 - [Commit Messages 📝](#commit-messages-)
 - [Versioning 📌](#versioning-)
 - [Acknowledgements 🙏](#acknowledgements-)
 - [Authors 🪶](#authors-)
-- [Contributing 🤝](#contributing-)
+- [Contributing 🤝](#contributing--tbd)
 - [Support ⭐](#support-)
 - [License 📜](#license-)
 
@@ -86,7 +86,7 @@ You can find the documentation for the project in the [Wiki](https://linktodocum
 
 If you discover any security related issues, please use the issue tracker instead of sending a mail.
 
-# Branching Modell and Naming 🌿
+# Branching Model and Naming 🌿
 We use a simplyfied version of the [Gitflow](https://www.atlassian.com/de/git/tutorials/comparing-workflows/gitflow-workflow) workflow.
 
 | Name      | Description                                                                                      |
