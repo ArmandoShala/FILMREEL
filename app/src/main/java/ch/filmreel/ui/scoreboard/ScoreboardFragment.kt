@@ -1,19 +1,18 @@
 package ch.filmreel.ui.scoreboard
-
-import android.R
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import ch.filmreel.databinding.FragmentQuizBinding
+import ch.filmreel.databinding.FragmentScoreboardBinding
+import ch.filmreel.model.Movie
+import ch.filmreel.model.Player
 
 
 class ScoreboardFragment : Fragment() {
 
-    private var _binding: FragmentQuizBinding? = null
+    private var _binding: FragmentScoreboardBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,17 +23,19 @@ class ScoreboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val quizViewModel =
-            ViewModelProvider(this)[ScoreboardViewModel::class.java]
+        _binding = FragmentScoreboardBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
-        _binding = FragmentQuizBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val player1: Player = arguments?.get("PLAYER1") as Player
+        val player2: Player = arguments?.get("PLAYER2") as Player
+        val movie: Movie = arguments?.get("MOVIE") as Movie
+        println(player1.name)
+        println(player2.name)
+        println(movie.genre)
 
-        val textView: TextView = binding.textDashboard
-        quizViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
     }
 
     override fun onDestroyView() {

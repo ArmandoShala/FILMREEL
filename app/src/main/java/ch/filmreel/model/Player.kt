@@ -1,6 +1,10 @@
 package ch.filmreel.model
 
-class Player constructor(var points : Double, var name : String, var watchList: MutableList<Movie>) {
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+class Player(var points: Double, var name: String, var watchList: MutableList<Movie>) : Parcelable {
 
     fun addPoints(points : Double) {
         this.points += points
