@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/movieThumbnail"
+        android:layout_width="170dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/movieName"
+        android:layout_width="128dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/movieCheckbox"
+        app:layout_constraintStart_toEndOf="@+id/movieThumbnail"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/movieThumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/movieShortDescription" />
+
+    <TextView
+        android:id="@+id/movieDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/movieShortDescription"
+        tools:layout_editor_absoluteX="230dp" />
+
+    <ImageView
+        android:id="@+id/movieCheckbox"
+        android:layout_width="81dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <TextView
+        android:id="@+id/movieDelimiter"
+        android:layout_width="3dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="-2dp"
+        android:text="|"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/movieDuration"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/movieYear"
+        app:layout_constraintTop_toBottomOf="@+id/movieShortDescription" />
+
+    <TextView
+        android:id="@+id/movieShortDescription"
+        android:layout_width="128dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/movieCheckbox"
+        app:layout_constraintStart_toEndOf="@+id/movieThumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/movieName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
