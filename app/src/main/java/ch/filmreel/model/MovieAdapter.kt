@@ -48,10 +48,17 @@ class MovieAdapter(val movies: MutableList<Movie>, val context: Context) : BaseA
         binding.movieYear.text = movie.year.toString()
         binding.movieDuration.text = movie.duration.toString()
         binding.movieShortDescription.text = movie.description
-        binding.movieCheckbox.isActivated = movie.seen
+        binding.movieCheckmark.setColorFilter(determineCheckmarkColor(movie.seen))
         binding.movieThumbnail.setImageURI(assemblyUrlForThumbnail(movie.id))
 
         return view
+    }
+
+    private fun determineCheckmarkColor(seen: Boolean): Int {
+        return when (seen) {
+            true -> context.getColor(android.R.color.holo_green_dark)
+            false -> context.getColor(android.R.color.white)
+        }
     }
 
     private fun assemblyUrlForThumbnail(movieId: String): Uri {
