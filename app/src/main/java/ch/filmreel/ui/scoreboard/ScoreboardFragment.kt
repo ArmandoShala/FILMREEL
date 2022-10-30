@@ -1,4 +1,4 @@
-package ch.filmreel.ui.quiz
+package ch.filmreel.ui.scoreboard
 
 import android.R
 import android.os.Bundle
@@ -9,10 +9,9 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import ch.filmreel.databinding.FragmentQuizBinding
-import ch.filmreel.ui.scoreboard.ScoreboardFragment
 
 
-class QuizFragment : Fragment() {
+class ScoreboardFragment : Fragment() {
 
     private var _binding: FragmentQuizBinding? = null
 
@@ -26,7 +25,7 @@ class QuizFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val quizViewModel =
-            ViewModelProvider(this).get(QuizViewModel::class.java)
+            ViewModelProvider(this)[ScoreboardViewModel::class.java]
 
         _binding = FragmentQuizBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -42,5 +41,5 @@ class QuizFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-    
+
 }
