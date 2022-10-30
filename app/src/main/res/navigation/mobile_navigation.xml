@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/navigation_leaderboard"
-        android:name="ch.filmreel.ui.watchlist.WatchlistFragment"
+        android:name="ch.filmreel.ui.leaderboard.LeaderBoardFragment"
         android:label="@string/title_leaderboard"
         tools:layout="@layout/fragment_leaderboard" />
 </navigation>
