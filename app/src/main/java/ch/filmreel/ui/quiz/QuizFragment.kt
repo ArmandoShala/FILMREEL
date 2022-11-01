@@ -10,8 +10,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import ch.filmreel.R
 import ch.filmreel.databinding.FragmentQuizBinding
-import ch.filmreel.model.*
+import ch.filmreel.model.Movie
+import ch.filmreel.model.Player
+import ch.filmreel.model.Quiz
 import ch.filmreel.ui.scoreboard.ScoreboardFragment
+import ch.filmreel.ui.watchlist.WatchlistFragment
 import java.util.*
 
 
@@ -23,28 +26,23 @@ class QuizFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
     private var quiz: Quiz? = null
+    private var movies: MutableList<Movie>? = null
+    private val watchlistFragment = WatchlistFragment()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
+        this.movies = watchlistFragment.initMockData()
+
         val quizViewModel =
             ViewModelProvider(this)[QuizViewModel::class.java]
 
         quiz = Quiz(Player(0.0, "Player 1", mutableListOf()),
             Player(0.0, "Player 2", mutableListOf()),
-            Movie(UUID.randomUUID(),
-                "Jeffry Dahmer", 2022, "Horror",
-                "Im Verlauf von über einem Jahrzehnt wurden 17 junge Männer von dem verurteilten Mörder Jeffrey Dahmer ermordet. Wie konnte er der Verhaftung so lange entgehen?", 530.0, 4.8,
-                mutableListOf(Question("Was ist das Hauptgenre des Films?",
-                    mutableListOf(
-                    Answer("Horror", true),
-                    Answer("Drama", false),
-                    Answer("Action", false),
-                    Answer("Comedy", false)))),
-                "https://www.lto.de/fileadmin/_processed_/e/d/csm_Bildschirmfoto_2022-10-21_um_1.27.21_PM_a53104d704.png"
-            ))
+           getRandomMovie())
 
         _binding = FragmentQuizBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -59,12 +57,22 @@ class QuizFragment : Fragment() {
         return root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        quiz?.movie ?: getRandomMovie()
+    }
+
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 
-    fun goToScoreBoard() {
+    private fun getRandomMovie(): Movie {
+        return movies!![Random().nextInt(movies!!.size)]
+    }
+
+    private fun goToScoreBoard() {
         val bundle = Bundle()
         bundle.putParcelable("QUIZ", quiz)
         val scoreboardFragment = ScoreboardFragment()

@@ -17,12 +17,12 @@
   - [API Reference 🖇️ TBD](#api-reference-️-tbd)
   - [Possible Future Extension 💡](#possible-future-extension-)
 - [Security 👮](#security-)
-- [Branching Modell and Naming 🌿](#branching-modell-and-naming-)
+- [Branching Model and Naming 🌿](#branching-modell-and-naming-)
 - [Commit Messages 📝](#commit-messages-)
 - [Versioning 📌](#versioning-)
 - [Acknowledgements 🙏](#acknowledgements-)
 - [Authors 🪶](#authors-)
-- [Contributing 🤝](#contributing-)
+- [Contributing 🤝](#contributing--tbd)
 - [Support ⭐](#support-)
 - [License 📜](#license-)
 
@@ -40,7 +40,7 @@ FILMREEL can be played with up to two people on one smartphone. Both users see a
 
 ## Screenshots 📸
 
-| Page                                                                                                                        | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Page                                                                                                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | :-------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | ![image](https://user-images.githubusercontent.com/11156050/192164143-dab7bfa6-6209-4faf-a1d8-74e0acadc678.png) Home        | An introduction to the app is presented on the home page. This is to achieve the best possible user experience. It also explains how the app works and allows you to set game preferences, such as genre and number of players. The quiz can be ended after each question                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ![image](https://user-images.githubusercontent.com/11156050/192164631-9294bf0b-2ec7-4030-a7ba-271556c92036.png) Quiz        | On the quiz page a short trailer clip of a movie is shown. The users have limited time to watch the short film clip. After that, the timer starts and the quiz duel for this movie clip begins. Below the film section, various questions and corresponding answers are listed, which the players have to decide on as quickly as possible. The faster the answer, the more points you get. After the question has been answered or the timer has run out, the game switches to the scoreboard and the points are displayed as an intermediate score. The person who has collected more points during the game wins the duel. This procedure is similar to the Kahoot procedure |
@@ -54,7 +54,7 @@ FILMREEL can be played with up to two people on one smartphone. Both users see a
 You can find the documentation for the project in the [Wiki](https://linktodocumentation)
 
 
-## Techstack und Tools 🧰
+## Techstack and Tools 🧰
 * [Kotlin](https://kotlinlang.org/)
 * [Redis DB](https://redis.io/) _tbd_
 * [YouTube-API](https://developers.google.com/youtube/v3) _tbd_
@@ -86,7 +86,7 @@ You can find the documentation for the project in the [Wiki](https://linktodocum
 
 If you discover any security related issues, please use the issue tracker instead of sending a mail.
 
-# Branching Modell and Naming 🌿
+# Branching Model and Naming 🌿
 We use a simplyfied version of the [Gitflow](https://www.atlassian.com/de/git/tutorials/comparing-workflows/gitflow-workflow) workflow.
 
 | Name      | Description                                                                                      |
@@ -100,8 +100,8 @@ We use a simplyfied version of the [Gitflow](https://www.atlassian.com/de/git/tu
 ![screenshot](https://lh3.googleusercontent.com/8dNQyk6EkIvu9UZI-uaGYtQ2R3sqxn0BEbvk6xPiBmswMfcL2iFa6Zy6g0ewpWdTBIo1xQftjaZwMBaF-ODVc3jrIkBR03QsarL6BvtlEQ87KIsSxoxT2nScG6PZwsShuNa8kXM)
 </div>
 
-As for the naming of the branches, we use the following convention:
-GH-`<issue>-<issue-namee>[-<short-description>]`
+As for the naming of the feature branches, we use the following convention:
+GH-`<issue-id>-<issue-namee>[-<short-description>]`
 
 # Commit Messages 📝
 The following section is optional, but highly recommended. It is a good practice to write a commit message in the following format:
@@ -139,7 +139,7 @@ A big thank you to all the people who have contributed to this project. We are v
 Build with ❤️ by [@armandoshala](https://www.github.com/armandoshala) (shalaar3), [@landrit](https://www.github.com/landrit) (ahmetlan), and [@omerasipi](https://www.github.com/omerasipi) (asipiome) in Switzerland
 
 
-# Contributing 🤝
+# Contributing 🤝 TBD
 Contributions are always welcome! Please read the [contribution guidelines]
 
 # Support ⭐
