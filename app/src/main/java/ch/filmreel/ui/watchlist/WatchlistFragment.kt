@@ -9,6 +9,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import ch.filmreel.R
+import ch.filmreel.model.Answer
+import ch.filmreel.model.Movie
+import ch.filmreel.model.Question
 import ch.filmreel.placeholder.MoviePlaceholderContent
 
 /**
@@ -57,4 +60,5 @@ class WatchlistFragment : Fragment() {
                     }
                 }
     }
+
 }

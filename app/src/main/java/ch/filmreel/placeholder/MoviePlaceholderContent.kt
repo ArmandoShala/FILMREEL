@@ -1,6 +1,8 @@
 package ch.filmreel.placeholder
 
+import ch.filmreel.model.Answer
 import ch.filmreel.model.Movie
+import ch.filmreel.model.Question
 import java.util.ArrayList
 
 /**
@@ -17,7 +19,7 @@ object MoviePlaceholderContent {
         ITEMS = createPlaceholderItem()
     }
 
-    private fun createPlaceholderItem(): MutableList<Movie> {
+    fun createPlaceholderItem(): MutableList<Movie> {
         // Add some sample items.
         val theGodfather = Movie(
             "MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM",
@@ -26,8 +28,9 @@ object MoviePlaceholderContent {
             "Crime",
             "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
             175,
-            5,
-            mutableListOf(),
+            5.0,
+            mutableListOf(Question("Who is the director of this movie?", mutableListOf(Answer("Francis Ford Coppola", true), Answer("Martin Scorsese", false), Answer("Steven Spielberg", false), Answer("Quentin Tarantino", false)))),
+            "https://img.nzz.ch/2022/02/19/6be9e4c5-efda-40c6-8f94-816bdd332c2a.jpeg?width=960&height=539&fit=bounds&quality=75&auto=webp&crop=4096,2302,x0,y436",
             true
         )
         val theGoddather2 = Movie(
@@ -37,8 +40,9 @@ object MoviePlaceholderContent {
             "Crime",
             "The early life and career of Vito Corleone in 1920s New York is portrayed while his son, Michael, expands and tightens his grip on the family crime syndicate.",
             202,
-            5,
-            mutableListOf(),
+            5.0,
+            mutableListOf(Question("Who is the director of this movie?", mutableListOf(Answer("Francis Ford Coppola", true), Answer("Martin Scorsese", false), Answer("Steven Spielberg", false), Answer("Quentin Tarantino", false)))),
+            "https://www.filmlinc.org/wp-content/uploads/2011/08/NYFF57_Retrospective_TheGodfatherPartII_02-1.jpg",
             true
         )
         val theDarkKnight = Movie(
@@ -48,8 +52,9 @@ object MoviePlaceholderContent {
             "Action",
             "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
             152,
-            5,
-            mutableListOf(),
+            5.0,
+            mutableListOf(Question("Who is the director of this movie?", mutableListOf(Answer("Francis Ford Coppola", true), Answer("Martin Scorsese", false), Answer("Steven Spielberg", false), Answer("Quentin Tarantino", false)))),
+            "https://static.kino.de/wp-content/uploads/2015/08/the-dark-knight-2008-filmplakat-rcm1920x1080u.jpg",
             false
         )
         val theShawshankRedemption = Movie(
@@ -59,8 +64,9 @@ object MoviePlaceholderContent {
             "Crime",
             "Two imprisoned men bond over a number of years, finding solace and eventual redemption through ",
             142,
-            5,
-            mutableListOf(),
+            5.0,
+            mutableListOf(Question("Who is the director of this movie?", mutableListOf(Answer("Francis Ford Coppola", true), Answer("Martin Scorsese", false), Answer("Steven Spielberg", false), Answer("Quentin Tarantino", false)))),
+            "https://m.media-amazon.com/images/M/MV5BNjQ2NDA3MDcxMF5BMl5BanBnXkFtZTgwMjE5NTU0NzE@._V1_QL75_UX500_CR0,47,500,281_.jpg",
             false
         )
         return mutableListOf(theGodfather, theGoddather2, theDarkKnight, theShawshankRedemption)
