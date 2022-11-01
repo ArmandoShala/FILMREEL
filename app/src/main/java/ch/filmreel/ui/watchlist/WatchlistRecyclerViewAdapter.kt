@@ -1,5 +1,6 @@
 package ch.filmreel.ui.watchlist
 
+import android.graphics.Color
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -36,21 +37,14 @@ class WatchlistRecyclerViewAdapter(private val values: List<Movie>) :
         holder.duration.text = movie.duration.toString()
         holder.checkmark.setImageResource(R.drawable.ic_baseline_check_circle_outline_24)
         holder.checkmark.setColorFilter(determineCheckmarkColor(movie.seen))
-        holder.checkmark.setOnClickListener {
-            Toast.makeText(
-                holder.checkmark.context,
-                "${holder.checkmark.colorFilter}",
-                Toast.LENGTH_SHORT
-            ).show()
-        }
     }
 
     override fun getItemCount(): Int = values.size
 
     private fun determineCheckmarkColor(seen: Boolean): Int {
         return when (seen) {
-            true -> android.R.color.holo_green_dark
-            false -> android.R.color.holo_purple
+            true -> Color.GREEN
+            false -> Color.LTGRAY
         }
     }
 
