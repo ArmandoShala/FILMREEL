@@ -13,8 +13,8 @@ import ch.filmreel.databinding.FragmentQuizBinding
 import ch.filmreel.model.Movie
 import ch.filmreel.model.Player
 import ch.filmreel.model.Quiz
+import ch.filmreel.placeholder.MoviePlaceholderContent
 import ch.filmreel.ui.scoreboard.ScoreboardFragment
-import ch.filmreel.ui.watchlist.WatchlistFragment
 import java.util.*
 
 
@@ -27,7 +27,7 @@ class QuizFragment : Fragment() {
     private val binding get() = _binding!!
     private var quiz: Quiz? = null
     private var movies: MutableList<Movie>? = null
-    private val watchlistFragment = WatchlistFragment()
+    private val mockDate = MoviePlaceholderContent
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,7 +35,7 @@ class QuizFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        this.movies = watchlistFragment.initMockData()
+        this.movies = mockDate.createPlaceholderItem()
 
         val quizViewModel =
             ViewModelProvider(this)[QuizViewModel::class.java]
