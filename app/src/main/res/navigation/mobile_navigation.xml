@@ -1,25 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/mobile_navigation"
-            app:startDestination="@+id/navigation_home">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
 
     <fragment
             android:id="@+id/navigation_home"
             android:name="ch.filmreel.ui.home.HomeFragment"
             android:label="@string/title_home"
-            tools:layout="@layout/fragment_home"/>
+            tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_quiz"
+            app:destination="@id/navigation_quiz" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_watchlist"
+            app:destination="@id/navigation_watchlist" />
+    </fragment>
 
     <fragment
             android:id="@+id/navigation_quiz"
             android:name="ch.filmreel.ui.quiz.QuizFragment"
             android:label="@string/title_quiz"
-            tools:layout="@layout/fragment_quiz"/>
+            tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/action_navigation_quiz_to_navigation_score"
+            app:destination="@id/navigation_score" />
+        <action
+            android:id="@+id/action_navigation_quiz_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_quiz_to_navigation_watchlist"
+            app:destination="@id/navigation_watchlist" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_score"
+        android:name="ch.filmreel.ui.scoreboard.ScoreboardFragment"
+        android:label="@string/title_scoreboard"
+        tools:layout="@layout/fragment_scoreboard">
+        <action
+            android:id="@+id/action_navigation_score_to_navigation_quiz"
+            app:destination="@id/navigation_quiz"
+            app:popUpTo="@id/navigation_quiz"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_navigation_score_to_navigation_leaderboard"
+            app:destination="@id/navigation_leaderboard" />
+    </fragment>
+
 
     <fragment
-            android:id="@+id/navigation_watchlist"
-            android:name="ch.filmreel.ui.watchlist.WatchlistFragment"
-            android:label="@string/title_watchlist"
-            tools:layout="@layout/fragment_watchlist"/>
+        android:id="@+id/navigation_watchlist"
+        android:name="ch.filmreel.ui.watchlist.WatchlistFragment"
+        android:label="@string/title_watchlist"
+        tools:layout="@layout/fragment_watchlist" />
+
+    <fragment
+        android:id="@+id/navigation_leaderboard"
+        android:name="ch.filmreel.ui.leaderboard.LeaderBoardFragment"
+        android:label="@string/title_leaderboard"
+        tools:layout="@layout/fragment_leaderboard" />
 </navigation>

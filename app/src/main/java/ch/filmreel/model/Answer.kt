@@ -1,9 +1,13 @@
 package ch.filmreel.model
 
-class Answer constructor(var answer : String) {
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-    fun checkAnswer(answer : String) : Boolean {
-        return this.answer == answer
+@Parcelize
+class Answer constructor(var answer : String, var isTrueAnswer: Boolean) : Parcelable {
+
+    fun checkAnswer(isTrueAnswer: Boolean) : Boolean {
+        return this.isTrueAnswer == isTrueAnswer
     }
 
 }

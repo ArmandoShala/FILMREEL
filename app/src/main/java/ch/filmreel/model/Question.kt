@@ -1,9 +1,13 @@
 package ch.filmreel.model
 
-class Question constructor(var question : String, var answers : MutableList<Answer>) {
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-    fun checkAnswer(answer : String) : Boolean {
-        return answers.any { it.checkAnswer(answer) }
+@Parcelize
+class Question constructor(var question : String, var answers : MutableList<Answer>) : Parcelable {
+
+    fun checkAnswer(isTrueAnswer: Boolean) : Boolean {
+        return answers.any { it.checkAnswer(isTrueAnswer) }
     }
 
 

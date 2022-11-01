@@ -11,14 +11,12 @@ import android.widget.BaseAdapter
 import ch.filmreel.databinding.FragmentWatchlistItemBinding
 
 
-class MovieAdapter(val movies: MutableList<Movie>, val context: Context) : BaseAdapter() {
+class MovieAdapter(private val movies: MutableList<Movie>, private val context: Context) : BaseAdapter() {
 
-    var layoutInflater: LayoutInflater
+    var layoutInflater: LayoutInflater = LayoutInflater.from(context)
     private var _binding: FragmentWatchlistItemBinding? = null
     private val binding get() = _binding!!
     private var bindings = mutableMapOf<View, FragmentWatchlistItemBinding>()
-
-    init { layoutInflater = LayoutInflater.from(context) }
 
     override fun getCount(): Int {
         return movies.size

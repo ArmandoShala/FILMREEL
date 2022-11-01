@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import ch.filmreel.R
 import ch.filmreel.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -17,18 +19,14 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding.playButton.setOnClickListener {
+           // findNavController().navigate(R.id.action_navigation_home_to_navigation_quiz)
+        }
         return binding.root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-
-    fun redirectToQuiz() {
-        val playButton = binding.playButton
-        playButton.setOnClickListener {
-
-        }
     }
 }
