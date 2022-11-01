@@ -4,10 +4,10 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-class Answer constructor(var answer : String) : Parcelable {
+class Answer constructor(var answer : String, var isTrueAnswer: Boolean) : Parcelable {
 
-    fun checkAnswer(answer : String) : Boolean {
-        return this.answer == answer
+    fun checkAnswer(isTrueAnswer: Boolean) : Boolean {
+        return this.isTrueAnswer == isTrueAnswer
     }
 
 }

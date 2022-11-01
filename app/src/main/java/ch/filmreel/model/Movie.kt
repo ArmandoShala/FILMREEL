@@ -2,7 +2,7 @@ package ch.filmreel.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-import java.util.UUID
+import java.util.*
 
 @Parcelize
 data class Movie constructor(var id: UUID,
@@ -11,11 +11,12 @@ data class Movie constructor(var id: UUID,
                              var genre : String,
                              var description : String,
                              var duration : Double,
-                             var rating : Int,
+                             var rating : Double,
                              var questions : MutableList<Question>,
+                             var image: String,
 ) : Parcelable {
 
-    fun rate(rating : Int) {
+    fun rate(rating : Double) {
         this.rating = rating
     }
 

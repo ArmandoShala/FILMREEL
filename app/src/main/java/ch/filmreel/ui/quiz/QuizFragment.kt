@@ -5,14 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import ch.filmreel.R
 import ch.filmreel.databinding.FragmentQuizBinding
 import ch.filmreel.model.*
 import ch.filmreel.ui.scoreboard.ScoreboardFragment
-import ch.filmreel.ui.home.HomeFragment
 import java.util.*
 
 
@@ -36,11 +35,16 @@ class QuizFragment : Fragment() {
         quiz = Quiz(Player(0.0, "Player 1", mutableListOf()),
             Player(0.0, "Player 2", mutableListOf()),
             Movie(UUID.randomUUID(),
-                "Landrits lebe", 2022, "Horror",
-                "Mis lebe isch en horror", 2000.0, 10,
-                mutableListOf(Question("Was isch das für es lebe?",
+                "Jeffry Dahmer", 2022, "Horror",
+                "Im Verlauf von über einem Jahrzehnt wurden 17 junge Männer von dem verurteilten Mörder Jeffrey Dahmer ermordet. Wie konnte er der Verhaftung so lange entgehen?", 530.0, 4.8,
+                mutableListOf(Question("Was ist das Hauptgenre des Films?",
                     mutableListOf(
-                    Answer("Horror"))))))
+                    Answer("Horror", true),
+                    Answer("Drama", false),
+                    Answer("Action", false),
+                    Answer("Comedy", false)))),
+                "https://www.lto.de/fileadmin/_processed_/e/d/csm_Bildschirmfoto_2022-10-21_um_1.27.21_PM_a53104d704.png"
+            ))
 
         _binding = FragmentQuizBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -62,13 +66,9 @@ class QuizFragment : Fragment() {
 
     fun goToScoreBoard() {
         val bundle = Bundle()
-        bundle.putParcelable("PLAYER1", quiz?.player1)
-        bundle.putParcelable("PLAYER2", quiz?.player2)
-        bundle.putParcelable("MOVIE", quiz?.movie)
+        bundle.putParcelable("QUIZ", quiz)
         val scoreboardFragment = ScoreboardFragment()
         scoreboardFragment.arguments = bundle
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(this.id, scoreboardFragment)
-            .commit()
+        findNavController().navigate(R.id.action_navigation_quiz_to_navigation_score, bundle)
     }
 }

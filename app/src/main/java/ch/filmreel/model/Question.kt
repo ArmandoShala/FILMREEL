@@ -6,8 +6,8 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 class Question constructor(var question : String, var answers : MutableList<Answer>) : Parcelable {
 
-    fun checkAnswer(answer : String) : Boolean {
-        return answers.any { it.checkAnswer(answer) }
+    fun checkAnswer(isTrueAnswer: Boolean) : Boolean {
+        return answers.any { it.checkAnswer(isTrueAnswer) }
     }
 
 

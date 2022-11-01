@@ -1,7 +1,10 @@
 package ch.filmreel.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-class Quiz(var player1: Player, var player2: Player, var movie: Movie) {
+@Parcelize
+class Quiz(var player1: Player, var player2: Player, var movie: Movie) : Parcelable {
 
     init {
         player1.addPoints(0.0)
@@ -9,7 +12,7 @@ class Quiz(var player1: Player, var player2: Player, var movie: Movie) {
         val startTime = System.currentTimeMillis()
     }
 
-    fun rateMovie(rating : Int) {
+    fun rateMovie(rating : Double) {
         movie.rate(rating)
     }
 
@@ -17,13 +20,13 @@ class Quiz(var player1: Player, var player2: Player, var movie: Movie) {
         player.addToWatchList(movie)
     }
 
-    fun addPoints(points : Double) {
-        player1.addPoints(points)
+    fun addPoints(points : Double, player: Player) {
+        player.addPoints(points)
     }
 
-    fun answerQuestion(question : Question, answer : String) : Boolean {
-        if (question.checkAnswer(answer)) {
-            addPoints(10.0)
+    fun answerQuestion(question : Question, isTrueAnswer : Boolean, player: Player) : Boolean {
+        if (question.checkAnswer(isTrueAnswer )) {
+            addPoints(10.0, player)
             return true
         }
         return false

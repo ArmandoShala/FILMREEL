@@ -4,10 +4,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import ch.filmreel.R
 import ch.filmreel.databinding.FragmentScoreboardBinding
-import ch.filmreel.model.Movie
-import ch.filmreel.model.Player
+import ch.filmreel.model.Quiz
+import com.squareup.picasso.Picasso
 
 
 class ScoreboardFragment : Fragment() {
@@ -29,18 +30,35 @@ class ScoreboardFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val player1: Player = arguments?.get("PLAYER1") as Player
-        val player2: Player = arguments?.get("PLAYER2") as Player
-        val movie: Movie = arguments?.get("MOVIE") as Movie
-        println(player1.name)
-        println(player2.name)
-        println(movie.genre)
+        val quiz: Quiz = arguments?.get("QUIZ") as Quiz
+        // TODO: What if there were multiple questions?
+        binding.textQuestionTitle.text = quiz.movie.questions[0].question
+        binding.textScorePlayer1.text = quiz.player1.points.toString()
+        binding.textScorePlayer2.text = quiz.player2.points.toString()
+        // TODO: what when multiple answers are correct?
+        binding.textQuestionAnswer.text = quiz.movie.questions[0].answers.filter { it.isTrueAnswer }[0].answer
+        Picasso.get().load(quiz.movie.image).into(binding.imageView)
+        binding.buttonBackToQuizz.setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_score_to_navigation_quiz)
+        }
+
+        binding.floatingButtonShowMoreInfoToMovie.setOnClickListener {
+           // TODO: Show more info to movie with ExpandableListView
+        }
+
+        /* go to leaderboard
+        binding.buttonEndGame.setOnClickListener {
+           findNavController().navigate(R.id.action_navigation_score_to_navigation_leaderboard)
+        }
+       */
 
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
 
 }
