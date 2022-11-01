@@ -46,11 +46,11 @@ class ScoreboardFragment : Fragment() {
            // TODO: Show more info to movie with ExpandableListView
         }
 
-        /* go to leaderboard
+
         binding.buttonEndGame.setOnClickListener {
            findNavController().navigate(R.id.action_navigation_score_to_navigation_leaderboard)
         }
-       */
+
 
     }
 
