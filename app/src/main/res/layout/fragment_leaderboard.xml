@@ -51,7 +51,7 @@
         android:background="@android:color/transparent"
         android:textColor="@color/primary_color"
         android:textColorLink="@color/primary_color"
-        app:icon="@drawable/ic_home_black_24dp"
+        app:icon="@drawable/ic_baseline_home_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />

@@ -35,8 +35,8 @@ class LeaderBoardFragment : Fragment() {
 
         //bind buttonToWatchlist
         binding.buttonToWatchlist.setOnClickListener {
-            //add movie to watchlist
-
+            //todo: call method to save movie to watchlist
+            //how to initialize LeaderBoardModel object?
         }
 
         return root
