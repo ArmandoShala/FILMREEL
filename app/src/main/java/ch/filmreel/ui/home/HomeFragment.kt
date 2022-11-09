@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import ch.filmreel.R
 import ch.filmreel.databinding.FragmentHomeBinding
+import ch.filmreel.ui.scoreboard.ScoreboardFragment
 
 class HomeFragment : Fragment() {
 
@@ -22,11 +23,18 @@ class HomeFragment : Fragment() {
         binding.playButton.setOnClickListener {
            // findNavController().navigate(R.id.action_navigation_home_to_navigation_quiz)
         }
+        binding.playButton.setOnClickListener {
+            goToQuiz()
+        }
         return binding.root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    private fun goToQuiz() {
+        findNavController().navigate(R.id.action_navigation_home_to_navigation_quiz)
     }
 }
