@@ -52,6 +52,7 @@
         android:textColor="@color/primary_color"
         android:textColorLink="@color/primary_color"
         app:icon="@drawable/ic_baseline_home_24"
+        app:iconTint="@color/primary_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -66,6 +67,7 @@
         android:textColor="@color/primary_color"
         android:textColorLink="@color/primary_color"
         app:icon="@drawable/ic_popcorn_orange"
+        app:iconTint="@color/primary_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
