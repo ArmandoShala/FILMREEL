@@ -13,4 +13,6 @@
     <string name="text_watchMovies">Now Go Watch Some Movies!</string>
     <string name="textShowInfosToMovie">Show more information</string>
     <string name="textVersus">vs</string>
+    <string name="welcome_to_your_netflix_amp_chill_helper"><![CDATA[Welcome to your Netflix & Chill Helper! 🫡]]></string>
+    <string name="play">Play</string>
 </resources>

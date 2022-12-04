@@ -55,9 +55,11 @@
         android:id="@+id/textQuestionTitle"
         android:layout_width="wrap_content"
         android:layout_height="31dp"
-        android:layout_marginTop="348dp"
+        android:layout_marginTop="335dp"
+        android:autoSizeTextType="uniform"
         android:gravity="center"
-        android:text="QUESTION TEXT"
+        android:lines="5"
+        android:maxLines="5"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +73,6 @@
         android:layout_height="87dp"
         android:layout_marginTop="3dp"
         android:gravity="center"
-        android:text="QUESTIN ANSWER"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,7 +101,6 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="999"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonBackToQuizz"
@@ -114,7 +114,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="999"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonEndGame"
@@ -132,6 +131,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textShowInfosToMovie"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@android:drawable/arrow_down_float" />
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
