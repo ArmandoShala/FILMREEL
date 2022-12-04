@@ -1,14 +1,3 @@
-package ch.filmreel.model
-
-import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
-
-@Parcelize
-class Question constructor(var question : String, var answers : MutableList<Answer>) : Parcelable {
-
-    fun checkAnswer(isTrueAnswer: Boolean) : Boolean {
-        return answers.any { it.checkAnswer(isTrueAnswer) }
-    }
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6be7e392074ed48584c41ae8b70fe574e8553624424de8c7a4da3dcecd46c7ca
+size 328

@@ -1,34 +1,3 @@
-package ch.filmreel.ui.leaderboard
-
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import ch.filmreel.databinding.FragmentLeaderboardBinding
-
-class LeaderBoardFragment : Fragment() {
-    private var _binding: FragmentLeaderboardBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-
-        _binding = FragmentLeaderboardBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-        binding.textView.text = "Leaderboard"
-
-        return root
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bb03d5333312eb5dea7115109584af9a97daa72231cf6ed9618e8c582e49a7fa
+size 914

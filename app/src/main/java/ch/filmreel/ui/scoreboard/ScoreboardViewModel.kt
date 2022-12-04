@@ -1,13 +1,3 @@
-package ch.filmreel.ui.scoreboard
-
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-
-class ScoreboardViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is scoreboard Fragment"
-    }
-    val text: LiveData<String> = _text
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2958ddc4e7f78d6e72f6c79f2ba78ce7a9d11b01524f14008527e3c905b9abd1
+size 342

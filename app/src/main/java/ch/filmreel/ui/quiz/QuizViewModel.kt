@@ -1,13 +1,3 @@
-package ch.filmreel.ui.quiz
-
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-
-class QuizViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
-    }
-    val text: LiveData<String> = _text
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6fdd1816099b14f77fdbb50358186cccedb7842b73323ef8d1d501a5ed90fbcb
+size 329
