@@ -70,5 +70,9 @@
         android:id="@+id/navigation_leaderboard"
         android:name="ch.filmreel.ui.leaderboard.LeaderBoardFragment"
         android:label="@string/title_leaderboard"
-        tools:layout="@layout/fragment_leaderboard" />
+        tools:layout="@layout/fragment_leaderboard" >
+        <action
+            android:id="@+id/action_navigation_leaderboard_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 </navigation>
