@@ -29,7 +29,6 @@
             android:id="@+id/action_navigation_quiz_to_navigation_score"
             app:destination="@id/navigation_score"
             app:popUpTo="@id/navigation_quiz"
-            app:popUpToSaveState="true"
             app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_navigation_quiz_to_navigation_home"
@@ -73,6 +72,7 @@
         tools:layout="@layout/fragment_leaderboard" >
         <action
             android:id="@+id/action_navigation_leaderboard_to_navigation_home"
-            app:destination="@id/navigation_home" />
+            app:destination="@id/navigation_home"
+            app:popUpToInclusive="true"/>
     </fragment>
 </navigation>
