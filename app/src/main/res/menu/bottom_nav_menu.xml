@@ -16,8 +16,4 @@
             android:icon="@drawable/ic_popcorn_orange"
             android:title="@string/title_watchlist"/>
 
-    <item
-        android:id="@+id/navigation_leaderboard"
-        android:icon="@drawable/ic_baseline_bug_report_24"
-        android:title="@string/title_leaderboard"/>
 </menu>
