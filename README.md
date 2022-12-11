@@ -56,13 +56,12 @@ You can find the documentation for the project in the [Wiki](https://linktodocum
 
 ## Techstack and Tools 🧰
 * [Kotlin](https://kotlinlang.org/)
-* [Redis DB](https://redis.io/) _tbd_
-* [YouTube-API](https://developers.google.com/youtube/v3) _tbd_
-* [Netflix-API](https://rapidapi.com/blog/netflix-api/) _tbd_
+* [SQLiteDatabase](https://developer.android.com/training/data-storage/sqlite)
 * [Material Design](https://material.io/)
 * [Figma](https://www.figma.com/)
 * [IntelliJ](https://www.jetbrains.com/idea/)
 * [Android Development](https://developer.android.com/)
+* [GIT LFS](https://git-lfs.github.com/)
 
 <br >
 
@@ -140,7 +139,9 @@ Build with ❤️ by [@armandoshala](https://www.github.com/armandoshala) (shala
 
 
 # Contributing 🤝 TBD
-Contributions are always welcome! Please read the [contribution guidelines]
+This project was created for the course "MOBA 1" at the University of Applied Sciences in Zurich.
+Since the course is over, we will not be able to maintain this project. However, we will be happy to accept any contributions that you may have.
+Feel free to fork or clone this repository as long as you obey the License (Please refer to the license section for more information.)
 
 # Support ⭐
 If you like our project, please consider supporting us by giving a ⭐ on our project!
